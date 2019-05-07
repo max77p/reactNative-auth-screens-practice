@@ -21,6 +21,7 @@ class AuthScreen extends Component {
   };
   render() {
     let headingText=null;
+    
     console.log(this.props);
     return (
       <ImageBackground
