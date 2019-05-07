@@ -78,7 +78,7 @@ Navigation.events().registerAppLaunchedListener(() => {
                 topBar: {
                   visible: true,
                   title: {
-                    text: "main screen"
+                    text: "Login"
                   }
                 }
               }
