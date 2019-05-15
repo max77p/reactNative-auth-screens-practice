@@ -9,6 +9,7 @@ const placeList = props => {
         < FlatList
             style={styles.listItems}
             data={props.places}
+            // keyExtractor={item => item.index_id}
             renderItem={(info) => (
                 <ListItem
                     placeName={info.item.name}
