@@ -18,6 +18,7 @@ import PickLocation from "../../components/PickLocation/PickLocation";
 import PickImage from "../../components/PickImage/PickImage";
 
 class SharePlaceScreen extends Component {
+
   constructor(props) {
     super(props);
     Navigation.events().bindComponent(this);

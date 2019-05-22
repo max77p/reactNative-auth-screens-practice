@@ -9,7 +9,7 @@ const startTabs = () => {
   ]).then(sources => {
     Navigation.setRoot({
       root: {
-        sideMenu: {
+        sideMenu: {      
           left: {
             component: {
               name: `navigation.playground.SideDrawer`,
@@ -30,6 +30,7 @@ const startTabs = () => {
                           options: {
                             bottomTab: {
                               text: "Find Place",
+                              selectedIconColor: 'orange',
                               icon: sources[0]
                             },
                             topBar: {
@@ -41,7 +42,8 @@ const startTabs = () => {
                                 {
                                   id:"Menu",
                                   text: "Overview",
-                                  icon: sources[2]
+                                  icon: sources[2],
+                                  color: 'orange',
                                 }
                               ]
                             }
@@ -59,11 +61,12 @@ const startTabs = () => {
                           name: "navigation.playground.SharePlaceScreen",
                           options: {
                             bottomTab: {
+                              selectedIconColor: 'orange',
                               text: "Share Place",
                               icon: sources[1]
                             },
                             topBar: {
-                              // visible: true,
+                              visible: true,
                               title: {
                                 text: "Share Place"
                               },
@@ -71,7 +74,8 @@ const startTabs = () => {
                                 {
                                   id:"Menu",
                                   text: "Overview",
-                                  icon: sources[2]
+                                  icon: sources[2],
+                                  color: 'orange',
                                 }
                               ]
                             }
